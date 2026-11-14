@@ -2,27 +2,29 @@
 
 Thanks for helping out. New exercises, better hints, bug fixes and interview questions are all welcome.
 
-The project needs Python 3.14 and nothing else. Please keep it that way: standard library only.
+The project needs Python 3.14 and nothing else. Please keep it that way: standard library only, so `dependencies` in `pyproject.toml` stays empty.
+
+We use [uv](https://docs.astral.sh/uv/) to manage Python. `uv run` picks up the version pinned in `.python-version`, downloading it if needed. Plain `python3` works too if it's 3.14.
 
 ## Before you open a PR
 
 Run these from the repo root:
 
 ```bash
-python3 -m pylings dev-check
+uv run pylings dev-check
 ```
 
 ```bash
-SOLUTIONS=1 python3 -m unittest discover -s tests
+SOLUTIONS=1 uv run -m unittest discover -s tests
 ```
 
 ```bash
-python3 -m unittest discover -s pylings/tests
+uv run -m unittest discover -s pylings/tests
 ```
 
 `dev-check` confirms that every unsolved exercise fails and every reference solution passes.
 
-Don't commit your own answers in `exercises/`. To restore a file, run `python3 -m pylings reset <name>`.
+Don't commit your own answers in `exercises/`. To restore a file, run `uv run pylings reset <name>`.
 
 ## Adding an exercise
 

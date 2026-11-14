@@ -5,9 +5,13 @@ Python interview practice, [rustlings](https://github.com/rust-lang/rustlings)-s
 
 ## Start
 
+With [uv](https://docs.astral.sh/uv/getting-started/installation/) (it fetches Python 3.14 for you if you don't have it):
+
 ```bash
-python3 -m pylings
+uv run pylings
 ```
+
+No uv? Any Python 3.14 works: `python3 -m pylings`.
 
 It opens the next exercise and re-runs its tests every time you save.
 
@@ -34,11 +38,11 @@ Solutions are in `solutions/` (same layout). Interview questions are in `questio
 ## Without pylings
 
 ```bash
-python3 -m unittest discover -s tests -p "test_ex05*" -v
+uv run -m unittest discover -s tests -p "test_ex05*" -v
 ```
 
 Check the reference solutions:
 
 ```bash
-SOLUTIONS=1 python3 -m unittest discover -s tests
+SOLUTIONS=1 uv run -m unittest discover -s tests
 ```

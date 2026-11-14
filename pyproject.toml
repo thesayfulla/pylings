@@ -1,0 +1,18 @@
+[project]
+name = "pylings"
+version = "0.1.0"
+description = "Python interview practice, rustlings-style."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+pylings = "pylings.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+# The package sits at the repo root, next to exercises/ and solutions/.
+module-root = ""
