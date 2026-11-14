@@ -1,7 +1,8 @@
 # PyLings 🐍
 
-Python interview practice, [rustlings](https://github.com/rust-lang/rustlings)-style:
-35 warm-ups + 20 interview exercises, from easy to hard. Python 3.14, no dependencies.
+Python interview practice, like [rustlings](https://github.com/rust-lang/rustlings): from easy to hard. 
+
+Python 3.14 with no dependencies.
 
 ## Start
 
@@ -11,11 +12,19 @@ With [uv](https://docs.astral.sh/uv/getting-started/installation/) (it fetches P
 uv run pylings
 ```
 
-No uv? Any Python 3.14 works: `python3 -m pylings`.
+No uv? Any Python 3.14 works: `python3 -m pylings`
 
 It opens the next exercise and re-runs its tests every time you save.
 
-Keys: `n` next · `h` hint · `r` re-run · `l` list · `c` check all · `x` reset · `s` solution · `q` quit
+## Keys: 
+- `n` next
+- `h` hint
+- `r` re-run
+- `l` list
+- `c` check all
+- `x` reset
+- `s` solution
+- `q` quit
 
 ## Exercises
 
