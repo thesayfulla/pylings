@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests and system checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Check exercise system
+        run: uv run pylings dev-check
+
+      - name: Run exercise unit tests
+        run: uv run -m unittest discover -s tests
+        env:
+          SOLUTIONS: "1"
+
+      - name: Run package unit tests
+        run: uv run -m unittest discover -s pylings/tests
