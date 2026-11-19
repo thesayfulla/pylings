@@ -44,4 +44,4 @@ CacheInfo = namedtuple("CacheInfo", "hits misses currsize")
 
 
 def memoize(*, ttl=None, maxsize=128, clock=time.monotonic):
-    raise NotImplementedError
+   raise NotImplementedError

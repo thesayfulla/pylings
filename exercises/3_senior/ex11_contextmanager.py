@@ -1,6 +1,6 @@
 """Exercise 11 — Re-implement @contextlib.contextmanager from scratch.
 
-Time box: 30–40 min.  No importing contextlib.
+Time box: 30-40 min.  No importing contextlib.
 
     @contextmanager
     def opened(path):
@@ -46,4 +46,4 @@ Discussion (be ready to explain)
 
 
 def contextmanager(func):
-    raise NotImplementedError
+   raise NotImplementedError

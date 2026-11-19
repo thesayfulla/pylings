@@ -47,14 +47,14 @@ Discussion
 
 
 class CycleError(ValueError):
-    def __init__(self, cycle):
-        super().__init__(f"dependency cycle: {' -> '.join(map(str, cycle))}")
-        self.cycle = cycle
+   def __init__(self, cycle):
+      super().__init__(f"dependency cycle: {' -> '.join(map(str, cycle))}")
+      self.cycle = cycle
 
 
 def plan(deps):
-    raise NotImplementedError
+   raise NotImplementedError
 
 
 def run(deps, fn, *, max_workers):
-    raise NotImplementedError
+   raise NotImplementedError

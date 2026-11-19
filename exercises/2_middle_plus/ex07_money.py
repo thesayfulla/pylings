@@ -60,12 +60,12 @@ CURRENCIES = {"USD": 2, "EUR": 2, "UZS": 2, "JPY": 0, "BHD": 3}
 
 
 class CurrencyMismatch(ValueError):
-    pass
+   pass
 
 
 class Money:
-    def __init__(self, amount, currency):
-        raise NotImplementedError
+   def __init__(self, amount, currency):
+      raise NotImplementedError
 
-    def allocate(self, ratios):
-        raise NotImplementedError
+   def allocate(self, ratios):
+      raise NotImplementedError

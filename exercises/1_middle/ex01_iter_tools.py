@@ -45,16 +45,16 @@ Discussion
 
 
 def chunked(iterable, n):
-    raise NotImplementedError
+   raise NotImplementedError
 
 
 def sliding_window(iterable, n):
-    raise NotImplementedError
+   raise NotImplementedError
 
 
 def flatten(iterable, *, depth=None):
-    raise NotImplementedError
+   raise NotImplementedError
 
 
 def unique_everseen(iterable, key=None):
-    raise NotImplementedError
+   raise NotImplementedError

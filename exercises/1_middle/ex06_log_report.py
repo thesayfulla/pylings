@@ -56,26 +56,26 @@ from dataclasses import dataclass
 
 @dataclass
 class RouteStats:
-    method: str
-    route: str
-    count: int
-    errors: int
-    p50: float
-    p95: float
+   method: str
+   route: str
+   count: int
+   errors: int
+   p50: float
+   p95: float
 
-    @property
-    def error_rate(self):
-        raise NotImplementedError
+   @property
+   def error_rate(self):
+      raise NotImplementedError
 
 
 class Report:
-    def __init__(self, routes, malformed):
-        self.routes = routes
-        self.malformed = malformed
+   def __init__(self, routes, malformed):
+      self.routes = routes
+      self.malformed = malformed
 
-    def top(self, n, by="count"):
-        raise NotImplementedError
+   def top(self, n, by="count"):
+      raise NotImplementedError
 
 
 def analyze(lines, *, since=None, until=None):
-    raise NotImplementedError
+   raise NotImplementedError

@@ -52,11 +52,11 @@ Discussion
 
 
 class EventBus:
-    def subscribe(self, pattern, handler, *, priority=0, once=False):
-        raise NotImplementedError
+   def subscribe(self, pattern, handler, *, priority=0, once=False):
+      raise NotImplementedError
 
-    def emit(self, event, payload=None):
-        raise NotImplementedError
+   def emit(self, event, payload=None):
+      raise NotImplementedError
 
-    def handler_count(self, event):
-        raise NotImplementedError
+   def handler_count(self, event):
+      raise NotImplementedError

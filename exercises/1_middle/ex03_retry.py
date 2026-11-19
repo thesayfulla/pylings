@@ -51,16 +51,16 @@ import time
 
 
 def retry(
-    *,
-    on,
-    attempts=3,
-    base_delay=0.1,
-    factor=2.0,
-    max_delay=5.0,
-    jitter=False,
-    sleep=time.sleep,
-    async_sleep=asyncio.sleep,
-    rng=random.random,
-    on_retry=None,
+   *,
+   on,
+   attempts=3,
+   base_delay=0.1,
+   factor=2.0,
+   max_delay=5.0,
+   jitter=False,
+   sleep=time.sleep,
+   async_sleep=asyncio.sleep,
+   rng=random.random,
+   on_retry=None,
 ):
-    raise NotImplementedError
+   raise NotImplementedError

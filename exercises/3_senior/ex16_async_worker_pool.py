@@ -53,17 +53,17 @@ Discussion
 
 
 class WorkerPool:
-    def __init__(self, handler, *, workers, max_queue, timeout=None):
-        raise NotImplementedError
+   def __init__(self, handler, *, workers, max_queue, timeout=None):
+      raise NotImplementedError
 
-    async def __aenter__(self):
-        raise NotImplementedError
+   async def __aenter__(self):
+      raise NotImplementedError
 
-    async def __aexit__(self, exc_type, exc, tb):
-        raise NotImplementedError
+   async def __aexit__(self, exc_type, exc, tb):
+      raise NotImplementedError
 
-    async def submit(self, job):
-        raise NotImplementedError
+   async def submit(self, job):
+      raise NotImplementedError
 
-    async def shutdown(self, *, drain=True):
-        raise NotImplementedError
+   async def shutdown(self, *, drain=True):
+      raise NotImplementedError
